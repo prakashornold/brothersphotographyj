@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+#main-section {
+  position: relative;
+  flex-direction: column;
+  margin-top: 20px !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  font-family: "Sorts Mill Goudy";
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-section img {
+  width: 85%;
+  height: 100%;
+}
+
+#content-section {
+  margin-top: 100px;
+  height: 100%;
+  margin-left: -15%;
+}
+form {
+  margin-bottom: 150px;
+  text-align: left;
+  align-items: left;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400 !important;
+}
+
+.form-group {
+  justify-content:left !important;
+  padding-bottom: 20px;
+  padding: 10px;
+  display: flex;
+}
+
+label {
+  font-weight: bold;
+  font-weight: 400 !important;
+  font-family: sans-serif;
+  background: inherit;
+}
+
+label span {
+  color: red;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  min-width: 580px;
+  padding: 4px;
+}
+
+input[type="tel"],
+#other-work,
+#event-location {
+  width: 100%;
+  min-width: 250px;
+  padding: 4px;
+}
+
+#phone-country {
+  min-width: 80px;
+  max-width: 120px;
+  padding: 4px;
+}
+
+input[type="submit"] {
+  padding: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+hr {
+  color: gray;
+  background: gray;
+}
+
+h2,
+p {
+  padding: 20px 0;
+}
+
+.message-box {
+  position: absolute;
+  display: none;
+  left: 60%;
+  border: 1.5px solid gray;
+  background: gray;
+}
+.message-box p {
+  padding: 5px;
+  font-size: 12px;
+}
+.clicked {
+  background: rgba(255, 255, 0, 0.292) !important;
+}
+
+.form-group:hover .message-box {
+  display: block;
+}
+
+.form-group div,
+span {
+  background: inherit;
+}
+
+@media (max-width: 768px) {
+  #content-section {
+    margin-left: 0;
+  }
+  .form-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    min-width: auto;
+  }
+}
+
+/* Next page of Booking Page */
+.next-page-booking {
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+}
+.next-page-booking h1 {
+  font-size: 280% !important;
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.next-page-booking h2 {
+  font-size: 240% !important;
+  font-family: Palatino Linotype;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.next-page-booking ol{
+  line-height: 20px;
+}
+.next-page-booking li{
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .next-page-booking {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .next-page-booking h1 {
+    font-size: 180% !important;
+    font-family: Palatino Linotype;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .next-page-booking textarea {
+    min-width: 100% !important;
+  }
+  
+  .next-page-booking h2 {
+    font-size: 140% !important;
+    font-family: Palatino Linotype;
+    font-style: normal;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+#card-section,
+#featured-section,
+#featured-section-first {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  place-items: center;
+  margin: autom auto;
+  width: 100%;
+  gap: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+  text-align: center;
+}
+
+#featured-section-first {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#featured-section-first h1 {
+  font-weight: 500;
+}
+
+/* #featured-section-first #featured-section-first-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+} */
+#featured-section-first #featured-section-first-cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+#featured-section-first .Button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#featured-section-first .Button a {
+  background-color: #181f67;
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 12px 19px;
+  border-radius: 3px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-weight: normal;
+  cursor: pointer;
+}
+#card-section .card img {
+  margin: 8px;
+  margin-bottom: 50px;
+}
+
+#card-section h1,
+#featured-section h1 {
+  width: 50%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+#card-section p,
+#featured-section p {
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#featured-section #inner-card-home {
+  color: #000 !important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  place-items: center;
+  width: 60%;
+  margin-top: 50px;
+}
+
+#featured-section #inner-card-home .blog {
+  display: flex;
+  flex-direction: column;
+  color: #000 !important;
+  width: calc(100% / 2) !important;
+  height: 400px;
+}
+
+#featured-section #inner-card-home .blog .content {
+  color: #000;
+  /* Change */
+  font-size: 24px; 
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px;
+  font-weight: 500;
+  word-spacing: 1px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+}
+
+.blog .img img {
+  display: block;
+  object-fit: cover;
+  cursor: pointer;
+  width: 400px;
+  height: 250px;
+}
+
+@media (max-width: 1400px) {
+  #featured-section #inner-card-home {
+    width: 80%;
+  }
+
+  #featured-section #inner-card-home .blog .content h2 {
+    font-size: 18px;
+  }
+
+  .blog .img img {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 860px) {
+  #featured-section #inner-card-home {
+    flex-direction: column;
+  }
+  #featured-section #inner-card-home .blog {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+  }
+  #featured-section-first {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 660px) {
+  #featured-section-first #featured-section-first-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  #featured-section-first-cards > div > div > a > img {
+    width: 188px !important;
+    height: 228px !important;
+  }
+}
+
+@media (max-width: 460px) {
+  #featured-section-first-cards > div > div > a > img {
+    width: 128px !important;
+    height: 168px !important;
+  }
+}
